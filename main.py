@@ -34,11 +34,11 @@ def compare(delete_after: bool = True):
                     "read": etcd_cmprss.load,
                     "clean": etcd_cmprss.clean,
                 },
-                    # "arango_compress": {
-                    #     "create": arango_cmprss.get,
-                    #     "read": arango_cmprss.load,
-                    #     "clean": arango_cmprss.clean,
-                    # },
+                # "arango_compress": {
+                #     "create": arango_cmprss.get,
+                #     "read": arango_cmprss.load,
+                #     "clean": arango_cmprss.clean,
+                # },
                 "arango_cmprss64": {
                     "create": arango_cmprss64.get,
                     "read": arango_cmprss64.load,
@@ -49,51 +49,51 @@ def compare(delete_after: bool = True):
                     "read": orient_cmprss.load,
                     "clean": orient_cmprss.clean,
                 },
-                    # "postgres_normal": {
-                    #     "create": postgres_normal.get_size_sql_records,
-                    #     "read": postgres_normal.load_sql_records,
-                    #     "clean": postgres_normal.clean_sql,
-                    # },
-                    # "postgres_cmprss": {
-                    #     "create": postgres_cmprss.get_size_sql_records,
-                    #     "read": postgres_cmprss.load_sql_records,
-                    #     "clean": postgres_cmprss.clean_sql,
-                    # },
-                    # "aspike_normal": {
-                    #     "create": aspike_normal.get_size_aspike_records,
-                    #     "read": aspike_normal.load_aspike_records,
-                    #     "clean": aspike_normal.clean_aspike,
-                    # },
+                # "postgres_normal": {
+                #     "create": postgres_normal.get_size_sql_records,
+                #     "read": postgres_normal.load_sql_records,
+                #     "clean": postgres_normal.clean_sql,
+                # },
+                # "postgres_cmprss": {
+                #     "create": postgres_cmprss.get_size_sql_records,
+                #     "read": postgres_cmprss.load_sql_records,
+                #     "clean": postgres_cmprss.clean_sql,
+                # },
+                # "aspike_normal": {
+                #     "create": aspike_normal.get_size_aspike_records,
+                #     "read": aspike_normal.load_aspike_records,
+                #     "clean": aspike_normal.clean_aspike,
+                # },
                 "aspike_comprssd": {
                     "create": aspike_compressed.get_size_aspike_records,
                     "read": aspike_compressed.load_aspike_records,
                     "clean": aspike_compressed.clean_aspike,
                 },
-                    # "mongo_normal": {
-                    #     "create": mongo_normal.get_size_mongo_records,
-                    #     "read": mongo_normal.load_mongo_records,
-                    #     "clean": mongo_normal.clean_mongo,
-                    # },
-                    # "mongo_compressd": {
-                    #     "create": mongo_compress_individual.get_size_mongo_records,
-                    #     "read": mongo_compress_individual.load_mongo_records,
-                    #     "clean": mongo_compress_individual.clean_mongo,
-                    # },
-                    # "mongo_comp_blob": {
-                    #     "create": mongo_compress_blob.get_size_mongo_records,
-                    #     "read": mongo_compress_blob.load_mongo_records,
-                    #     "clean": mongo_compress_blob.clean_mongo,
-                    # },
-                    # "mysql_normal": {
-                    #     "create": mysql_normal.get_size_sql_records,
-                    #     "read": mysql_normal.load_sql_records,
-                    #     "clean": mysql_normal.clean_sql,
-                    # },
-                    # "mysql_compressd": {
-                    #     "create": mysql_compressed.get_size_sql_records,
-                    #     "read": mysql_compressed.load_sql_records,
-                    #     "clean": mysql_compressed.clean_sql,
-                    # }
+                # "mongo_normal": {
+                #     "create": mongo_normal.get_size_mongo_records,
+                #     "read": mongo_normal.load_mongo_records,
+                #     "clean": mongo_normal.clean_mongo,
+                # },
+                # "mongo_compressd": {
+                #     "create": mongo_compress_individual.get_size_mongo_records,
+                #     "read": mongo_compress_individual.load_mongo_records,
+                #     "clean": mongo_compress_individual.clean_mongo,
+                # },
+                # "mongo_comp_blob": {
+                #     "create": mongo_compress_blob.get_size_mongo_records,
+                #     "read": mongo_compress_blob.load_mongo_records,
+                #     "clean": mongo_compress_blob.clean_mongo,
+                # },
+                # "mysql_normal": {
+                #     "create": mysql_normal.get_size_sql_records,
+                #     "read": mysql_normal.load_sql_records,
+                #     "clean": mysql_normal.clean_sql,
+                # },
+                # "mysql_compressd": {
+                #     "create": mysql_compressed.get_size_sql_records,
+                #     "read": mysql_compressed.load_sql_records,
+                #     "clean": mysql_compressed.clean_sql,
+                # }
             }
         }
 

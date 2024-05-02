@@ -10,13 +10,15 @@ Docker and docker compose.
 
 ## How to run
 
-Launch all docker containers.
+### Launch all docker containers.
 
 ```cmd
 docker compose up
 ```
 
-Install requirements
+Head to the pottom of the `main.py` file and update the container ids accordingly.
+
+### Install requirements
 
 ```cmd
 python -m venv venv
@@ -26,11 +28,13 @@ python -m venv venv
 pip install -r .\requirements.txt
 ```
 
+### Configuring the tests
+
 In the `main.py` in the `compare` function you can configure which databases you wish to test.
 
 By calling `add_test(N)` you can add a new test to the comparisons. The N indicates how many records will be used in the test.
 
-Now run the tests.
+### Run the tests
 
 ```cmd
 python .\main.py

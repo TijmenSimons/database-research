@@ -154,6 +154,7 @@ def compare(delete_after: bool = True):
 if __name__ == "__main__":
     os.environ["ASPIKE_CONTAINER_ID"] = "6a5e27c34d2c50705c1c050ff051b40f614eb5babf2ad8e9f14a1557bd7d843c"
     os.environ["POSTGRES_CONTAINER_ID"] = "2f6835f1998753ef1dce9ac6633120530b403ebd4c392049afd196cc2a703c57"
+    # container ids of etcd-00, etcd-01 and etcd-02
     os.environ["ETCD_CONTAINER_ID"] = "bb7759aef4ebc50eb8a816d21f5bceec8538e17b3ca557ba1737af61f9fa25dd,dd2039b7f173c19b608f9e88308eaacde9b9ff40594ae69ba75e88b7ccde8adf,9a60e0c92c88bf2e7096816fad25af5239652e8755c13790132b6dd63b257377"
 
     compare()

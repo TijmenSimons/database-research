@@ -55,4 +55,4 @@ def clean_aspike(test, key):
     aspike = AspikeDB(test["dbs"][key]["db"])
     for id_ in test["dbs"][key]["ids"]:
         aspike.db.remove(("test", test["dbs"][key]["db"], id_))
-    print(f"[Aspike]: Cleared {test["dbs"][key]["db"]}")
+    print(f"[Aspike]: Cleared {test['dbs'][key]['db']}")

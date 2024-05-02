@@ -4,7 +4,7 @@ Deze research is uitgevoerd als deel van mijn afstudeeropdracht.
 
 ## Requirements
 
-Python version 3.11 or higher.
+Python version 3.12 or higher.
 
 Docker and docker compose.
 

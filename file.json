@@ -1,0 +1,1326 @@
+{
+    "rows": [
+      {
+        "fieldId": "UseSetImport",
+        "primaryKey": false,
+        "dataType": "boolean",
+        "label": "Import per set",
+        "mandatory": false,
+        "length": 1,
+        "controlType": 1,
+        "decimals": 0,
+        "notzero": false,
+        "values": null
+      },
+      {
+        "fieldId": "CreateDeclarations",
+        "primaryKey": false,
+        "dataType": "boolean",
+        "label": "Direct declaraties aanmaken",
+        "mandatory": false,
+        "length": 1,
+        "controlType": 1,
+        "decimals": 0,
+        "notzero": false,
+        "values": null
+      },
+      {
+        "fieldId": "ApprovWorkflow",
+        "primaryKey": false,
+        "dataType": "boolean",
+        "label": "Declaratie goedkeuren via workflow",
+        "mandatory": false,
+        "length": 1,
+        "controlType": 1,
+        "decimals": 0,
+        "notzero": false,
+        "values": null
+      },
+      {
+        "fieldId": "GetPcIdAndPrId",
+        "primaryKey": false,
+        "dataType": "boolean",
+        "label": "Plaatsingscontract en Project bepalen aan de hand van medewerker, verkooprelatie, en datum",
+        "mandatory": false,
+        "length": 1,
+        "controlType": 1,
+        "decimals": 0,
+        "notzero": false,
+        "values": null
+      },
+      {
+        "fieldId": "UnknownCandidate",
+        "primaryKey": false,
+        "dataType": "boolean",
+        "label": "Accepteer onbekende kandidaat (reverse billing)",
+        "mandatory": false,
+        "length": 1,
+        "controlType": 1,
+        "decimals": 0,
+        "notzero": false,
+        "values": null
+      },
+      {
+        "fieldId": "Id",
+        "primaryKey": false,
+        "dataType": "int",
+        "label": "Regelnummer",
+        "mandatory": false,
+        "length": 9,
+        "controlType": 1,
+        "decimals": 0,
+        "notzero": false,
+        "values": null
+      },
+      {
+        "fieldId": "XpRe",
+        "primaryKey": false,
+        "dataType": "string",
+        "label": "Externe sleutel",
+        "mandatory": false,
+        "length": 40,
+        "controlType": 1,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "DaTi",
+        "primaryKey": false,
+        "dataType": "date",
+        "label": "Datum",
+        "mandatory": true,
+        "length": 0,
+        "controlType": 4,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "VaIt",
+        "primaryKey": false,
+        "dataType": "string",
+        "label": "Type item",
+        "mandatory": true,
+        "length": 10,
+        "controlType": 5,
+        "decimals": 0,
+        "notzero": true,
+        "values": [
+          {
+            "id": "1",
+            "description": "Werksoort"
+          },
+          {
+            "id": "10",
+            "description": "Productie-indicator"
+          },
+          {
+            "id": "11",
+            "description": "Deeg"
+          },
+          {
+            "id": "14",
+            "description": "Artikeldimensietotaal"
+          },
+          {
+            "id": "2",
+            "description": "Artikel"
+          },
+          {
+            "id": "3",
+            "description": "Tekst"
+          },
+          {
+            "id": "4",
+            "description": "Subtotaal"
+          },
+          {
+            "id": "5",
+            "description": "Toeslag"
+          },
+          {
+            "id": "6",
+            "description": "Kosten"
+          },
+          {
+            "id": "7",
+            "description": "Samenstelling"
+          },
+          {
+            "id": "8",
+            "description": "Cursus"
+          }
+        ]
+      },
+      {
+        "fieldId": "ItCd",
+        "primaryKey": false,
+        "dataType": "string",
+        "label": "Itemcode",
+        "mandatory": true,
+        "length": 40,
+        "controlType": 1,
+        "decimals": 0,
+        "notzero": false,
+        "values": null
+      },
+      {
+        "fieldId": "Qu",
+        "primaryKey": false,
+        "dataType": "decimal",
+        "label": "Aantal",
+        "mandatory": false,
+        "length": 16,
+        "controlType": 1,
+        "decimals": 5,
+        "notzero": false,
+        "values": null
+      },
+      {
+        "fieldId": "QuSa",
+        "primaryKey": false,
+        "dataType": "decimal",
+        "label": "Verkoop (aantal)",
+        "mandatory": false,
+        "length": 16,
+        "controlType": 1,
+        "decimals": 5,
+        "notzero": false,
+        "values": null
+      },
+      {
+        "fieldId": "EmId",
+        "primaryKey": false,
+        "dataType": "string",
+        "label": "Medewerker",
+        "mandatory": false,
+        "length": 15,
+        "controlType": 5,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "EnSe",
+        "primaryKey": false,
+        "dataType": "int",
+        "label": "Dienstverband",
+        "mandatory": false,
+        "length": 9,
+        "controlType": 5,
+        "decimals": 0,
+        "notzero": false,
+        "values": null
+      },
+      {
+        "fieldId": "PrId",
+        "primaryKey": false,
+        "dataType": "string",
+        "label": "Project",
+        "mandatory": false,
+        "length": 15,
+        "controlType": 5,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "PrSt",
+        "primaryKey": false,
+        "dataType": "string",
+        "label": "Projectfase",
+        "mandatory": false,
+        "length": 15,
+        "controlType": 5,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "BcId",
+        "primaryKey": false,
+        "dataType": "string",
+        "label": "Organisatie/persoon",
+        "mandatory": false,
+        "length": 9,
+        "controlType": 5,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "DbId",
+        "primaryKey": false,
+        "dataType": "string",
+        "label": "Verkooprelatie",
+        "mandatory": false,
+        "length": 16,
+        "controlType": 5,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "StId",
+        "primaryKey": false,
+        "dataType": "string",
+        "label": "Urensoort",
+        "mandatory": false,
+        "length": 5,
+        "controlType": 5,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "AmCo",
+        "primaryKey": false,
+        "dataType": "decimal",
+        "label": "Kostprijs",
+        "mandatory": false,
+        "length": 26,
+        "controlType": 1,
+        "decimals": 10,
+        "notzero": false,
+        "values": null
+      },
+      {
+        "fieldId": "AmSe",
+        "primaryKey": false,
+        "dataType": "decimal",
+        "label": "Verkoopprijs basisvaluta",
+        "mandatory": false,
+        "length": 26,
+        "controlType": 1,
+        "decimals": 10,
+        "notzero": false,
+        "values": null
+      },
+      {
+        "fieldId": "DcPr",
+        "primaryKey": false,
+        "dataType": "decimal",
+        "label": "Kortingspercentage",
+        "mandatory": false,
+        "length": 6,
+        "controlType": 1,
+        "decimals": 2,
+        "notzero": false,
+        "values": null
+      },
+      {
+        "fieldId": "VaRc",
+        "primaryKey": false,
+        "dataType": "string",
+        "label": "Btw-tariefgroep",
+        "mandatory": false,
+        "length": 4,
+        "controlType": 5,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "Ch",
+        "primaryKey": false,
+        "dataType": "boolean",
+        "label": "Doorbelasten",
+        "mandatory": false,
+        "length": 1,
+        "controlType": 2,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "Ds",
+        "primaryKey": false,
+        "dataType": "string",
+        "label": "Omschrijving",
+        "mandatory": false,
+        "length": 255,
+        "controlType": 1,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "DsIn",
+        "primaryKey": false,
+        "dataType": "string",
+        "label": "Omschrijving intern",
+        "mandatory": false,
+        "length": 255,
+        "controlType": 1,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "DsEx",
+        "primaryKey": false,
+        "dataType": "string",
+        "label": "Omschrijving extern",
+        "mandatory": false,
+        "length": 255,
+        "controlType": 1,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "V1Cd",
+        "primaryKey": false,
+        "dataType": "string",
+        "label": "Code verbijzonderingsas 1",
+        "mandatory": false,
+        "length": 16,
+        "controlType": 1,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "V2Cd",
+        "primaryKey": false,
+        "dataType": "string",
+        "label": "Code verbijzonderingsas 2",
+        "mandatory": false,
+        "length": 16,
+        "controlType": 1,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "V3Cd",
+        "primaryKey": false,
+        "dataType": "string",
+        "label": "Code verbijzonderingsas 3",
+        "mandatory": false,
+        "length": 16,
+        "controlType": 1,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "V4Cd",
+        "primaryKey": false,
+        "dataType": "string",
+        "label": "Code verbijzonderingsas 4",
+        "mandatory": false,
+        "length": 16,
+        "controlType": 1,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "V5Cd",
+        "primaryKey": false,
+        "dataType": "string",
+        "label": "Code verbijzonderingsas 5",
+        "mandatory": false,
+        "length": 16,
+        "controlType": 1,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "Di01",
+        "primaryKey": false,
+        "dataType": "int",
+        "label": "Vrije dimensie 1",
+        "mandatory": false,
+        "length": 9,
+        "controlType": 5,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "Di02",
+        "primaryKey": false,
+        "dataType": "int",
+        "label": "Vrije dimensie 2",
+        "mandatory": false,
+        "length": 9,
+        "controlType": 5,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "Di03",
+        "primaryKey": false,
+        "dataType": "int",
+        "label": "Vrije dimensie 3",
+        "mandatory": false,
+        "length": 9,
+        "controlType": 5,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "Di04",
+        "primaryKey": false,
+        "dataType": "int",
+        "label": "Vrije dimensie 4",
+        "mandatory": false,
+        "length": 9,
+        "controlType": 5,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "Di05",
+        "primaryKey": false,
+        "dataType": "int",
+        "label": "Vrije dimensie 5",
+        "mandatory": false,
+        "length": 9,
+        "controlType": 5,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "War",
+        "primaryKey": false,
+        "dataType": "string",
+        "label": "Magazijn",
+        "mandatory": false,
+        "length": 15,
+        "controlType": 5,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "Loc",
+        "primaryKey": false,
+        "dataType": "string",
+        "label": "Magazijnlocatie",
+        "mandatory": false,
+        "length": 15,
+        "controlType": 5,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "EmDp",
+        "primaryKey": false,
+        "dataType": "string",
+        "label": "Organisatorische eenheid medewerker",
+        "mandatory": false,
+        "length": 10,
+        "controlType": 5,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "PrDp",
+        "primaryKey": false,
+        "dataType": "string",
+        "label": "Organisatorische eenheid project",
+        "mandatory": false,
+        "length": 10,
+        "controlType": 5,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "Dept",
+        "primaryKey": false,
+        "dataType": "string",
+        "label": "Organisatorische eenheid gewerkt",
+        "mandatory": false,
+        "length": 10,
+        "controlType": 5,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "CrId",
+        "primaryKey": false,
+        "dataType": "string",
+        "label": "Kostenplaats medewerker",
+        "mandatory": false,
+        "length": 30,
+        "controlType": 5,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "CcId",
+        "primaryKey": false,
+        "dataType": "string",
+        "label": "Kostendrager medewerker",
+        "mandatory": false,
+        "length": 30,
+        "controlType": 5,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "CoAm",
+        "primaryKey": false,
+        "dataType": "decimal",
+        "label": "Vergoeding",
+        "mandatory": false,
+        "length": 26,
+        "controlType": 1,
+        "decimals": 10,
+        "notzero": false,
+        "values": null
+      },
+      {
+        "fieldId": "LeId",
+        "primaryKey": false,
+        "dataType": "int",
+        "label": "Identificatie ziek/verlof",
+        "mandatory": false,
+        "length": 9,
+        "controlType": 1,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "UnRe",
+        "primaryKey": false,
+        "dataType": "int",
+        "label": "Administratie Retail",
+        "mandatory": false,
+        "length": 3,
+        "controlType": 5,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "UnId",
+        "primaryKey": false,
+        "dataType": "string",
+        "label": "Eenheid",
+        "mandatory": false,
+        "length": 15,
+        "controlType": 5,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "QuUn",
+        "primaryKey": false,
+        "dataType": "decimal",
+        "label": "Aantal eenheden",
+        "mandatory": false,
+        "length": 16,
+        "controlType": 1,
+        "decimals": 5,
+        "notzero": false,
+        "values": null
+      },
+      {
+        "fieldId": "QuLe",
+        "primaryKey": false,
+        "dataType": "decimal",
+        "label": "Lengte",
+        "mandatory": false,
+        "length": 16,
+        "controlType": 1,
+        "decimals": 5,
+        "notzero": false,
+        "values": null
+      },
+      {
+        "fieldId": "QuWi",
+        "primaryKey": false,
+        "dataType": "decimal",
+        "label": "Breedte",
+        "mandatory": false,
+        "length": 16,
+        "controlType": 1,
+        "decimals": 5,
+        "notzero": false,
+        "values": null
+      },
+      {
+        "fieldId": "QuHe",
+        "primaryKey": false,
+        "dataType": "decimal",
+        "label": "Hoogte",
+        "mandatory": false,
+        "length": 16,
+        "controlType": 1,
+        "decimals": 5,
+        "notzero": false,
+        "values": null
+      },
+      {
+        "fieldId": "Upri",
+        "primaryKey": false,
+        "dataType": "decimal",
+        "label": "Prijs per eenheid (basisvaluta)",
+        "mandatory": false,
+        "length": 26,
+        "controlType": 1,
+        "decimals": 10,
+        "notzero": false,
+        "values": null
+      },
+      {
+        "fieldId": "StL1",
+        "primaryKey": false,
+        "dataType": "string",
+        "label": "Artikeldimensiecode 1",
+        "mandatory": false,
+        "length": 10,
+        "controlType": 5,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "StL2",
+        "primaryKey": false,
+        "dataType": "string",
+        "label": "Artikeldimensiecode 2",
+        "mandatory": false,
+        "length": 10,
+        "controlType": 5,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "Rem",
+        "primaryKey": false,
+        "dataType": "string",
+        "label": "Opmerking",
+        "mandatory": false,
+        "length": 30,
+        "controlType": 1,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "Ap",
+        "primaryKey": false,
+        "dataType": "boolean",
+        "label": "Geaccordeerd",
+        "mandatory": false,
+        "length": 1,
+        "controlType": 2,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "Pr",
+        "primaryKey": false,
+        "dataType": "boolean",
+        "label": "Gereedgemeld",
+        "mandatory": false,
+        "length": 1,
+        "controlType": 2,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "StTi",
+        "primaryKey": false,
+        "dataType": "date",
+        "label": "Begintijd",
+        "mandatory": false,
+        "length": 0,
+        "controlType": 7,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "EnTi",
+        "primaryKey": false,
+        "dataType": "date",
+        "label": "Eindtijd",
+        "mandatory": false,
+        "length": 0,
+        "controlType": 7,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "PaTi",
+        "primaryKey": false,
+        "dataType": "date",
+        "label": "Pauzeduur",
+        "mandatory": false,
+        "length": 0,
+        "controlType": 7,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "UnEm",
+        "primaryKey": false,
+        "dataType": "int",
+        "label": "Administratie medewerker",
+        "mandatory": false,
+        "length": 3,
+        "controlType": 5,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "MoId",
+        "primaryKey": false,
+        "dataType": "string",
+        "label": "Bewakingscode",
+        "mandatory": false,
+        "length": 9,
+        "controlType": 5,
+        "decimals": 0,
+        "notzero": false,
+        "values": null
+      },
+      {
+        "fieldId": "CoTy",
+        "primaryKey": false,
+        "dataType": "string",
+        "label": "Type projectkosten",
+        "mandatory": false,
+        "length": 10,
+        "controlType": 5,
+        "decimals": 0,
+        "notzero": true,
+        "values": [
+          {
+            "id": "MA",
+            "description": "Materiaal"
+          },
+          {
+            "id": "A",
+            "description": "Arbeid"
+          },
+          {
+            "id": "ME",
+            "description": "Materieel"
+          },
+          {
+            "id": "OA",
+            "description": "Onderaanneming"
+          },
+          {
+            "id": "O",
+            "description": "Overige kosten"
+          }
+        ]
+      },
+      {
+        "fieldId": "CuId",
+        "primaryKey": false,
+        "dataType": "string",
+        "label": "Valuta",
+        "mandatory": false,
+        "length": 3,
+        "controlType": 5,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "Rate",
+        "primaryKey": false,
+        "dataType": "decimal",
+        "label": "Valutakoers",
+        "mandatory": false,
+        "length": 28,
+        "controlType": 1,
+        "decimals": 10,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "UpFc",
+        "primaryKey": false,
+        "dataType": "decimal",
+        "label": "Prijs per eenheid",
+        "mandatory": false,
+        "length": 26,
+        "controlType": 1,
+        "decimals": 10,
+        "notzero": false,
+        "values": null
+      },
+      {
+        "fieldId": "AmFc",
+        "primaryKey": false,
+        "dataType": "decimal",
+        "label": "Verkoopprijs",
+        "mandatory": false,
+        "length": 26,
+        "controlType": 1,
+        "decimals": 10,
+        "notzero": false,
+        "values": null
+      },
+      {
+        "fieldId": "SaAF",
+        "primaryKey": false,
+        "dataType": "decimal",
+        "label": "Verkoopbedrag",
+        "mandatory": false,
+        "length": 26,
+        "controlType": 1,
+        "decimals": 10,
+        "notzero": false,
+        "values": null
+      },
+      {
+        "fieldId": "PrVF",
+        "primaryKey": false,
+        "dataType": "decimal",
+        "label": "Verkoopprijs inclusief btw",
+        "mandatory": false,
+        "length": 26,
+        "controlType": 1,
+        "decimals": 10,
+        "notzero": false,
+        "values": null
+      },
+      {
+        "fieldId": "SaIF",
+        "primaryKey": false,
+        "dataType": "decimal",
+        "label": "Verkoopbedrag inclusief btw",
+        "mandatory": false,
+        "length": 26,
+        "controlType": 1,
+        "decimals": 10,
+        "notzero": false,
+        "values": null
+      },
+      {
+        "fieldId": "LdAF",
+        "primaryKey": false,
+        "dataType": "decimal",
+        "label": "Bedrag korting",
+        "mandatory": false,
+        "length": 26,
+        "controlType": 1,
+        "decimals": 10,
+        "notzero": false,
+        "values": null
+      },
+      {
+        "fieldId": "LdIF",
+        "primaryKey": false,
+        "dataType": "decimal",
+        "label": "Bedrag korting inclusief btw",
+        "mandatory": false,
+        "length": 26,
+        "controlType": 1,
+        "decimals": 10,
+        "notzero": false,
+        "values": null
+      },
+      {
+        "fieldId": "FileId",
+        "primaryKey": false,
+        "dataType": "string",
+        "label": "File Id",
+        "mandatory": false,
+        "length": 32,
+        "controlType": 1,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "FileName",
+        "primaryKey": false,
+        "dataType": "string",
+        "label": "Filename",
+        "mandatory": false,
+        "length": 255,
+        "controlType": 1,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "FileStream",
+        "primaryKey": false,
+        "dataType": "blob",
+        "label": "File as byte-array",
+        "mandatory": false,
+        "length": 0,
+        "controlType": 1,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "DiAp",
+        "primaryKey": false,
+        "dataType": "boolean",
+        "label": "Afgekeurd",
+        "mandatory": false,
+        "length": 1,
+        "controlType": 2,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "DiRe",
+        "primaryKey": false,
+        "dataType": "blob",
+        "label": "Toelichting afkeuring",
+        "mandatory": false,
+        "length": 0,
+        "controlType": 6,
+        "decimals": 0,
+        "notzero": false,
+        "values": null
+      },
+      {
+        "fieldId": "PcId",
+        "primaryKey": false,
+        "dataType": "string",
+        "label": "Plaatsing",
+        "mandatory": false,
+        "length": 9,
+        "controlType": 5,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "Pay",
+        "primaryKey": false,
+        "dataType": "boolean",
+        "label": "Verlonen",
+        "mandatory": false,
+        "length": 1,
+        "controlType": 2,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "AmPy",
+        "primaryKey": false,
+        "dataType": "decimal",
+        "label": "Loonprijs",
+        "mandatory": false,
+        "length": 26,
+        "controlType": 1,
+        "decimals": 10,
+        "notzero": false,
+        "values": null
+      },
+      {
+        "fieldId": "PcPy",
+        "primaryKey": false,
+        "dataType": "decimal",
+        "label": "Percentage bruto loon",
+        "mandatory": false,
+        "length": 6,
+        "controlType": 1,
+        "decimals": 2,
+        "notzero": false,
+        "values": null
+      },
+      {
+        "fieldId": "CcSr",
+        "primaryKey": false,
+        "dataType": "string",
+        "label": "Kostenplaats verkooprelatie",
+        "mandatory": false,
+        "length": 30,
+        "controlType": 5,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "ReBi",
+        "primaryKey": false,
+        "dataType": "boolean",
+        "label": "Reversed billing",
+        "mandatory": false,
+        "length": 1,
+        "controlType": 2,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "ExAp",
+        "primaryKey": false,
+        "dataType": "boolean",
+        "label": "Goedgekeurd extern",
+        "mandatory": false,
+        "length": 1,
+        "controlType": 2,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "ExDa",
+        "primaryKey": false,
+        "dataType": "date",
+        "label": "Goedgekeurd op extern",
+        "mandatory": false,
+        "length": 0,
+        "controlType": 8,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "ExUs",
+        "primaryKey": false,
+        "dataType": "string",
+        "label": "Goedgekeurd door extern",
+        "mandatory": false,
+        "length": 80,
+        "controlType": 1,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "RfCs",
+        "primaryKey": false,
+        "dataType": "string",
+        "label": "Opdrachtnummer/referentie",
+        "mandatory": false,
+        "length": 100,
+        "controlType": 1,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "DcId",
+        "primaryKey": false,
+        "dataType": "string",
+        "label": "Declaratienummer",
+        "mandatory": false,
+        "length": 9,
+        "controlType": 5,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "Fref",
+        "primaryKey": false,
+        "dataType": "string",
+        "label": "Factuurreferentie",
+        "mandatory": false,
+        "length": 32,
+        "controlType": 1,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "InPu",
+        "primaryKey": false,
+        "dataType": "boolean",
+        "label": "Binnen inkoop",
+        "mandatory": false,
+        "length": 1,
+        "controlType": 2,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "PoMo",
+        "primaryKey": false,
+        "dataType": "int",
+        "label": "Pocketmode",
+        "mandatory": false,
+        "length": 9,
+        "controlType": 1,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "AmSp",
+        "primaryKey": false,
+        "dataType": "decimal",
+        "label": "Toeslag",
+        "mandatory": false,
+        "length": 26,
+        "controlType": 1,
+        "decimals": 10,
+        "notzero": false,
+        "values": null
+      },
+      {
+        "fieldId": "ChPc",
+        "primaryKey": false,
+        "dataType": "decimal",
+        "label": "Percentage opslag",
+        "mandatory": false,
+        "length": 5,
+        "controlType": 1,
+        "decimals": 2,
+        "notzero": false,
+        "values": null
+      },
+      {
+        "fieldId": "WoHo",
+        "primaryKey": false,
+        "dataType": "boolean",
+        "label": "Thuiswerken",
+        "mandatory": false,
+        "length": 1,
+        "controlType": 2,
+        "decimals": 0,
+        "notzero": true,
+        "values": null
+      },
+      {
+        "fieldId": "OvPc",
+        "primaryKey": false,
+        "dataType": "decimal",
+        "label": "Overhead (%)",
+        "mandatory": false,
+        "length": 5,
+        "controlType": 1,
+        "decimals": 2,
+        "notzero": false,
+        "values": null
+      },
+      {
+        "fieldId": "ViTr",
+        "primaryKey": false,
+        "dataType": "string",
+        "label": "Vervoermiddel",
+        "mandatory": false,
+        "length": 10,
+        "controlType": 3,
+        "decimals": 0,
+        "notzero": false,
+        "values": [
+          {
+            "id": "11",
+            "description": "Auto’s benzine"
+          },
+          {
+            "id": "12",
+            "description": "Auto’s diesel"
+          },
+          {
+            "id": "13",
+            "description": "Auto’s die behoren tot de (plug in) hybrides"
+          },
+          {
+            "id": "14",
+            "description": "Auto’s 100% elektrisch"
+          },
+          {
+            "id": "15",
+            "description": "Auto’s andere brandstoffen"
+          },
+          {
+            "id": "21",
+            "description": "Motorfiets benzine/ diesel "
+          },
+          {
+            "id": "22",
+            "description": "Motorfiets elektrisch"
+          },
+          {
+            "id": "31",
+            "description": "Bromfiets/scooter benzine of diesel"
+          },
+          {
+            "id": "32",
+            "description": "Bromfiets/scooter 100% elektrisch (incl. pedelec)"
+          },
+          {
+            "id": "41",
+            "description": "(Elektrische) fiets (niet zijnde speed-pedelec) of lopen"
+          },
+          {
+            "id": "51",
+            "description": "Openbaar vervoer"
+          }
+        ]
+      },
+      {
+        "fieldId": "ViTv",
+        "primaryKey": false,
+        "dataType": "string",
+        "label": "Type reis",
+        "mandatory": false,
+        "length": 10,
+        "controlType": 3,
+        "decimals": 0,
+        "notzero": false,
+        "values": [
+          {
+            "id": "01",
+            "description": "Woon-werk"
+          },
+          {
+            "id": "02",
+            "description": "Zakelijke dienstreis"
+          }
+        ]
+      },
+      {
+        "fieldId": "U401500C9F2BD48598865BD3AB7CE817B",
+        "primaryKey": false,
+        "dataType": "int",
+        "label": "Regelnummer bron",
+        "mandatory": false,
+        "length": 8,
+        "controlType": 1,
+        "decimals": 0,
+        "notzero": false,
+        "values": null
+      },
+      {
+        "fieldId": "U435F0FFD8E9B4D41B0379910C104B578",
+        "primaryKey": false,
+        "dataType": "boolean",
+        "label": "vSync verwerkt",
+        "mandatory": false,
+        "length": 1,
+        "controlType": 2,
+        "decimals": 0,
+        "notzero": false,
+        "values": null
+      }
+    ],
+    "skip": 0,
+    "take": 0
+  }

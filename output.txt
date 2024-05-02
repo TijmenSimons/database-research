@@ -1,0 +1,43 @@
+Test: 1 -        10 records
+----------------------------------------------------------------
+Redis_compressd     14.97 KB    - write   0.01s - read   0.01s
+Etcd_compressed      60.0 KB    - write   0.67s - read   0.01s
+Aspike_comprssd      2.44 KB    - write   0.64s - read   0.01s
+Arango_cmprss64      1.68 KB    - write   0.03s - read   0.02s
+Orient_compress     13.13 KB    - write   0.38s - read   0.04s
+
+
+Test: 2 -       100 records
+----------------------------------------------------------------
+Redis_compressd     20.17 KB    - write   0.04s - read   0.03s
+Etcd_compressed     123.0 KB    - write   0.77s - read    0.1s
+Aspike_comprssd      25.2 KB    - write   0.67s - read   0.03s
+Arango_cmprss64      7.31 KB    - write   0.12s - read    0.1s
+Orient_compress     39.39 KB    - write   0.45s - read   0.09s
+
+
+Test: 3 -      1000 records
+----------------------------------------------------------------
+Redis_compressd    192.89 KB    - write   0.35s - read   0.31s
+Etcd_compressed     849.0 KB    - write   2.19s - read   0.91s
+Aspike_comprssd    243.19 KB    - write   1.12s - read   0.28s
+Arango_cmprss64     34.36 KB    - write   1.09s - read   0.92s
+Orient_compress    289.61 KB    - write   1.04s - read    0.6s
+
+
+Test: 4 -     10000 records
+----------------------------------------------------------------
+Redis_compressd      1.89 MB    - write   3.58s - read   3.03s
+Etcd_compressed      8.59 MB    - write  17.57s - read   8.96s
+Aspike_comprssd      2.38 MB    - write   3.95s - read   2.75s
+Arango_cmprss64      1.79 MB    - write  10.03s - read   9.07s
+Orient_compress      2.75 MB    - write   6.79s - read   6.07s
+
+
+Test: 5 -    100000 records
+----------------------------------------------------------------
+Redis_compressd     18.88 MB    - write  35.09s - read   30.5s
+Etcd_compressed      86.4 MB    - write 158.51s - read  89.53s
+Aspike_comprssd     23.79 MB    - write  33.59s - read  27.62s
+Arango_cmprss64     33.21 MB    - write 100.01s - read  90.28s
+Orient_compress     27.35 MB    - write  64.59s - read  58.97s
